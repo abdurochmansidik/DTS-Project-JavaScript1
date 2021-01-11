@@ -1,0 +1,194 @@
+<!-- in index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Saya</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- font awesome-->
+    <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' 
+    rel='stylesheet' />
+</head>
+
+  <body>
+        <!-- navigation bar -->
+        <div class="sticky">
+            <ul class="nav">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#Info">About</a></li>
+            <li><a href="#workex">Work Experience</a></li>
+            <li><a href="#kal">Kalkulator</a></li>
+            
+            </ul>
+        </div>
+    
+        <!-- header -->
+        <div class="header" id="home">
+            <img src="https://www.w3schools.com/bootstrap/bird150.jpg"/>
+            <h1>JOHN DOE PORTFOLIO</h1>
+            <h4> 500 Terry Francois Street </br>San Francisco, CA 94158 </h4>
+            <h4>E-mail: info@mysite.com</h4>
+            <h4>Phone: 123-456-7890</h4>
+            
+            <!-- Add font awesome icons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+    
+        <!-- tabel konten -->
+        <table id="konten">
+            <tr>
+            <!-- tabel kiri -->    
+            <td>
+                <!-- info perkenalan -->
+                <article id="Info">
+                    <h2 >Professional Info</h2>
+                    <hr>
+                    <p>Perkenalkan dirimu dan kelebihanmu Perkenalkan
+                    dirimu dan kelebihanmu Perkenalkan dirimu dan
+                    kelebihanmu Perkenalkan dirimu dan kelebihanmu
+                    Perkenalkan dirimu dan kelebihanmu Perkenalkan dirimu dan
+                    kelebihanmu</p>
+                </article> 
+    
+                <!-- work experience -->
+                <article id="workex">
+                    <h2 >Work Experience</h2>
+                    <hr>
+                    <h3> Job Title</h3>
+                    <h4> Tahun</h4>
+                    <p>Saya pernah magang sebagai front-end di perusahaan x
+                    dengan jobdesk utama saya adalah melakukan pembuatan
+                    tampilan aplikasi serta melakukan design aplikasi agar
+                    tampilan utamanya menarik</p>
+                    <h3>Job Title</h3>
+                    <h4> Tahun</h4>
+                    <p>Saya pernah magang sebagai back-end di perusahaan y
+                    dengan jobdesk utama saya adalah melakukan pembuatan
+                    back side aplikasi </p>
+                    </article>
+    
+                <!-- education -->
+                <article id="kal">
+                    <h2 >Kalkulator</h2>
+                    <hr>
+                    <input type="text" placeholder="Masukkan angka pertama" id="number01"><br /><br />
+                    <input type="text" placeholder="Masukkan angka kedua" id="number02"><br /><br />
+            
+                    <button type="button" onclick="addNumber();">Jumlah</button><button type="button" onclick="subsNumber();">Kurang</button><br />
+                    <button type="button" onclick="mulNumber();">Kali</button><button type="button" onclick="divNumber();">Bagi</button>
+            
+                    <script>
+                        function addNumber(){
+                            var angka1 = parseInt(document.getElementById("number01").value);
+                            var angka2 = parseInt(document.getElementById("number02").value);
+            
+                            var jumlah = angka1+angka2;
+            
+                            alert("Hasil penjumlahan: " + jumlah);
+                        }
+            
+                        function subsNumber(){
+                            var angka1 = parseInt(document.getElementById("number01").value);
+                            var angka2 = parseInt(document.getElementById("number02").value);
+            
+                            var kurang = angka1-angka2;
+            
+                            alert("Hasil penjumlahan: " + kurang);
+                        }
+            
+                        function mulNumber(){
+                            var angka1 = parseInt(document.getElementById("number01").value);
+                            var angka2 = parseInt(document.getElementById("number02").value);
+            
+                            var kali = angka1*angka2;
+            
+                            alert("Hasil penjumlahan: " + kali);
+                        }
+            
+                        function divNumber(){
+                            var angka1 = parseInt(document.getElementById("number01").value);
+                            var angka2 = parseInt(document.getElementById("number02").value);
+            
+                            var bagi = angka1/angka2;
+            
+                            alert("Hasil penjumlahan: " + bagi);
+                        }
+                    </script>
+            </td>
+    
+            </td>
+    
+            </tr>
+        </table>
+        <!-- tabel konten end -->
+    
+        <!-- container -->
+        <div class="container">
+            <!-- judul dan elemen form -->
+            <h2> Give me some messages </h2>
+            <form action="/action_page.php"></form>
+            Isi form tersebut dengan komponen-komponen formulir berikut :
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px">
+                    </textarea>
+                </div>
+            </div>
+    
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+        <!-- container end -->
+    
+    
+    <script src="main.js"></script>
+    
+
+        <!-- footer -->
+        <footer>
+            <p>Author: Hege Refsnes
+                <br><a href="mailto:hege@example.com">hege@example.com</a>
+            </p>
+        </footer>
+        <!-- footer end -->
+  </body>
+</html>

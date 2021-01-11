@@ -1,0 +1,60 @@
+<!--
+    Nama: Abdurochman Sidik
+-->
+<html>
+    <head>
+        <title>Latihan Fungsi</title>
+        <script type="text/javascript">
+            function myFunction(){
+                document.write("Ini adalah isi fungsi biasa <br />");
+            }
+            
+            var count = 0;
+            function countVowel(name){
+                for (var i=0; i<name.length;i++){
+                    if(name[i] == "a" || name[i] == "b" || name[i]=="c" || name[i] == "d" || name[i] == "e"){
+                        count = count+1;
+                    }
+                }
+                document.write("Hello " + name +". Nama Anda memiliki "+count+" karakter hidup <br />");
+            }
+
+            function returnSum(angka1, angka2){
+                var jumlah = angka1-angka2;
+                return jumlah;
+            }
+            
+            myFunction();
+            countVowel("Abdurochman Sidik");
+
+            var number1 = 80;
+            var number2 = 100;
+            document.write(number1 + " - " + number2 + " = " + returnSum(number1, number2));
+        </script>
+<br>
+<h1>Masukkan Nilai</h1>
+<input type="text" placeholder="Masukkan nilai" id="nilai">
+<button type="button" onclick="beriNilai();">Nilai!</button>
+
+<script>
+    function beriNilai() {
+        var score = parseInt(document.getElementById('nilai').value);
+
+        if(score <= 100 && score >=80) {
+            document.write('Selamat, anda mendapat nilai A');
+        } else if (score < 80 && score >=70) {
+            document.write('Selamat, anda mendapat nilai B');
+        } else if (score<70 && score >=60) {
+            document.write('Semangat!, anda mendapat nilai C');
+        } else if (score < 60 && score >=50) {
+            document.write('Berusaha lagi!, anda mendapat nilai D');
+        } else {
+            document.write('Maaf, nilai anda E');
+        }
+    }
+</script>
+    </head>
+    <body>
+
+    </body>
+</html>

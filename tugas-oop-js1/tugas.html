@@ -1,0 +1,72 @@
+<!--Nama : Abdruochman Sidik-->
+<html>
+    <head>
+        <script src="home.js"></script>
+        <title>Data Diri Anda</title>
+        
+    </head>
+    <body>
+        <h1>Masukkan Data Diri Anda</h1>
+        <input type="text" placeholder="Masukkan Nama" id="nama"><br/>
+        <input type="text" placeholder="Masukkan Alamat" id="alamat"><br/>
+        <button type="button" onclick="myFunction()">Masukkan</button>
+       
+       <script type="text/javascript">
+            function myFunction() {
+                var namaSaya = document.getElementById("nama").value;
+                var alamatSaya = document.getElementById("alamat").value;
+
+                alert("Nama Saya : " + namaSaya +  "  " +"Alamat Saya : " + alamatSaya);
+            }
+
+        </script>
+
+<!--Kalkulator-->
+<br>
+<h1>Kalkulator Sederhana</h1>
+<input type="text" placeholder="Masukkan angka pertama" id="number01"><br />
+<input type="teks" placeholder="Masukkan angka kedua" id="number02"><br /><br />
+
+<button type="button" onclick="addNumber();">Jumlah</button><button type="button" onclick="subsNumber();">Kurang</button><br />
+<button type="button" onclick="mulNumber();">Kali</button><button type="button" onclick="divNumber();">Bagi</button>
+
+
+<script>
+    function addNumber(){
+        var angka1 = parseInt(document.getElementById("number01").value);
+        var angka2 = parseInt(document.getElementById("number02").value);
+
+        var jumlah = angka1+angka2;
+
+        alert("Hasil penjumlahan: " + jumlah);
+    }
+
+    function subsNumber(){
+        var angka1 = parseInt(document.getElementById("number01").value);
+        var angka2 = parseInt(document.getElementById("number02").value);
+
+        var kurang = angka1-angka2;
+
+        alert("Hasil penjumlahan: " + kurang);
+    }
+
+    function mulNumber(){
+        var angka1 = parseInt(document.getElementById("number01").value);
+        var angka2 = parseInt(document.getElementById("number02").value);
+
+        var kali = angka1*angka2;
+
+        alert("Hasil penjumlahan: " + kali);
+    }
+
+    function divNumber(){
+        var angka1 = parseInt(document.getElementById("number01").value);
+        var angka2 = parseInt(document.getElementById("number02").value);
+
+        var bagi = angka1/angka2;
+
+        alert("Hasil penjumlahan: " + bagi);
+    }
+</script>
+    </body>
+</html>

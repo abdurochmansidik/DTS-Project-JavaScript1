@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>silahkan input nomer 1 sampai 10:</p>
+<input id="numb">
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // mengambil nilai input dengan id="numb"
+    x = document.getElementById("numb").value;
+ 
+
+    // jika x is Not a Number (isNaN) atau kurang dari satu atau lebih besar dari 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "<p>Input yang anda masukkan Salah</p>".repeat(5);
+    } else {
+        text = "<p>Input yang anda masukkan Benar</p>".repeat(5);
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
